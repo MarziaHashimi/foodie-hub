@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie Hub – Afghan Flavors</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="icon" href="image/favicon (10).ico" type="image/png">
+
+  <!-- Bootstrap 5 CDN -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+     <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+  <i class="bi bi-egg-fried fs-4 text-success"></i> 
+  <span>Foodie <span class="text-success">Hub</span></span></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#restaurants">Restaurants</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+
+        <!-- 👨‍🍳 Dropdown for Chefs -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="chefsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Chefs
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark bg-dark" aria-labelledby="chefsDropdown">
+            <li><a class="dropdown-item text-light" href="#chef-spotlight">Chef’s Spotlight</a></li>
+            <li><a class="dropdown-item text-light" href="#meet-chefs">Meet Our Chefs</a></li>
+          </ul> </li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+<header class="hero-section d-flex align-items-center justify-content-center text-center text-white">
+  <div class="hero-overlay"></div>
+  <div class="hero-text container position-relative">
+    <h1 class="display-3 fw-bold mb-3">Welcome to <span class="text-success">Foodie Hub</span></h1>
+     <p class="lead mb-4">Taste the authentic flavors of Ghazni & Jaghori – Afghan Culinary Treasures in One Place.</p>
+    <a href="#restaurants" class="btn btn-success px-4 py-2 rounded-pill shadow-sm">Explore Now</a>
+  </div>
+</header>
+
+  <!-- Restaurants Section -->
+<section id="restaurants" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Discover Local Afghan Eateries</h2>
+    <div class="row g-4">
+      
+      <!-- Restaurant Card 1 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card restaurant-card h-100">
+          <img src="image/Karahi.png" class="card-img-top" alt="Restaurant 1">
+          <div class="card-body">
+            <h5 class="card-title">Kabul Karahi</h5>
+            <p class="card-text">Authentic lamb karahi with herbs, slow-cooked the traditional way.</p>
+            <a href="#menu1" class="btn btn-success btn-sm">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurant Card 2 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card restaurant-card h-100">
+          <img src="image/jaghori-food.jpg" class="card-img-top" alt="Restaurant 2">
+          <div class="card-body">
+            <h5 class="card-title">Spice of Jaghori</h5>
+            <p class="card-text">Aromatic meals infused with spices from Jaghori’s mountains.</p>
+            <a href="#menu2" class="btn btn-success btn-sm">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurant Card 3 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card restaurant-card h-100">
+          <img src="image/juicy-kabab.jpeg" class="card-img-top" alt="Restaurant 3">
+          <div class="card-body">
+            <h5 class="card-title">Ghazni Grill</h5>
+            <p class="card-text">Juicy kebabs and tandoori bites grilled to perfection.</p>
+            <a href="#menu3" class="btn btn-success btn-sm">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurant Card 4 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card restaurant-card h-100">
+          <img src="image/palak-spinach.jpg" class="card-img-top" alt="Restaurant 4">
+          <div class="card-body">
+            <h5 class="card-title">Sabzi House</h5>
+            <p class="card-text">Fresh sabzi, spinach, and lentils made with a mother’s touch.</p>
+            <a href="#menu4" class="btn btn-success btn-sm">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurant Card 5 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card restaurant-card h-100">
+          <img src="image/kabuli.jpg" class="card-img-top" alt="Restaurant 5">
+          <div class="card-body">
+            <h5 class="card-title">Kabuli Kitchen</h5>
+            <p class="card-text">Aromatic qabuli palaw and hearty dishes passed down generations.</p>
+            <a href="#menu5" class="btn btn-success btn-sm">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurant Card 6 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card restaurant-card h-100">
+          <img src="image/naan.jpg" class="card-img-top" alt="Restaurant 6">
+          <div class="card-body">
+            <h5 class="card-title">Clay Oven Corner</h5>
+            <p class="card-text">Warm, oven-baked naan and traditional dishes served daily.</p>
+            <a href="#menu6" class="btn btn-success btn-sm">View Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurant Card 7 – Coming Soon Café -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="card restaurant-card h-100 border-warning border-2 shadow-sm">
+    <img src="image/Afghan-style café wi.png" class="card-img-top opacity-50" alt="Coming Soon Café">
+    <div class="card-body text-center">
+      <h5 class="card-title text-muted">☕ Cha-e Café</h5>
+      <p class="card-text text-muted">Afghan-style café serving fast food, fries, burgers & hot drinks.</p>
+      <span class="badge bg-warning text-dark px-3 py-2 rounded-pill">Coming Soon</span>
+    </div>
+  </div>
+</div>
+
+<!-- Restaurant Card 8 – Coming Soon Dessert Shop -->
+<div class="col-12 col-md-6 col-lg-3">
+  <div class="card restaurant-card h-100 border-info border-2 shadow-sm">
+    <img src="image/sheryakh.png" class="card-img-top opacity-50" alt="Sher Yakh & Juice Bar">
+    <div class="card-body text-center">
+      <h5 class="card-title text-muted">🍨 Bahar Treats</h5>
+      <p class="card-text text-muted">Colorful sher yakh, fresh juices & chilled Afghan desserts.</p>
+      <span class="badge bg-info text-dark px-3 py-2 rounded-pill">Opening Soon</span>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- Restaurant Menu Section -->
+<section id="menu1" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Menu – Taste of Ghazni</h2>
+    <div class="row g-4">
+
+      <!-- Menu Item 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🍚Kabuli Pulao</h5>
+            <p class="card-text">Afghanistan’s national dish made with spiced rice, tender lamb, raisins, and carrots.</p>
+            <p class="mb-1"><strong>520 AFN</strong></p>
+            <span class="badge availability available">Available</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🥟Bolani</h5>
+            <p class="card-text">Pan-fried flatbread filled with mashed potatoes, green onions, and herbs.</p>
+            <p class="mb-1"><strong>200 AFN</strong></p>
+            <span class="badge availability unavailable">Unavailable</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Item 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🍲Shorwa</h5>
+            <p class="card-text">Traditional Afghan stew with lamb, potatoes, carrots, and aromatic spices.</p>
+            <p class="mb-1"><strong>350 AFN</strong></p>
+            <span class="badge availability available">Available</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Restaurant Menu Section – Jaghori Delights -->
+<section id="menu2" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Menu – Jaghori Delights</h2>
+    <div class="row g-4">
+      <!-- Item 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🥟Ashak</h5>
+            <p class="card-text">Delicate dumplings filled with chives, topped with garlic yogurt and minced meat sauce.</p>
+            <p class="mb-1"><strong>400 AFN</strong></p>
+            <span class="badge availability available">Available</span>
+          </div>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🥟Mantu</h5>
+            <p class="card-text">Steamed dumplings stuffed with minced beef and onions, served with lentil and yogurt sauce.</p>
+            <p class="mb-1"><strong>500 AFN</strong></p>
+            <span class="badge availability unavailable">Unavailable</span>
+          </div>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🍛Qorma Nakhod</h5>
+            <p class="card-text">Spicy chickpea curry served with warm Afghan naan bread.</p>
+            <p class="mb-1"><strong>230 AFN</strong></p>
+            <span class="badge availability available">Available</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Restaurant Menu Section – Afghan BBQ House -->
+<section id="menu3" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Menu – Afghan BBQ House</h2>
+    <div class="row g-4">
+      <!-- Item 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🍖Chapli Kebab</h5>
+            <p class="card-text">Spicy minced meat patty grilled with crushed coriander and chili.</p>
+            <p class="mb-1"><strong>350 AFN</strong></p>
+            <span class="badge availability available">Available</span>
+          </div>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🍢Seekh Kebab</h5>
+            <p class="card-text">Juicy skewered kebabs made with seasoned ground beef.</p>
+            <p class="mb-1"><strong>450 AFN</strong></p>
+            <span class="badge availability unavailable">Unavailable</span>
+          </div>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🍗Afghan BBQ Mix</h5>
+            <p class="card-text">Assorted grilled meats served with naan and chutney.</p>
+            <p class="mb-1"><strong>450 AFN</strong></p>
+            <span class="badge availability available">Available</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Restaurant Menu Section – Garden of Herbs -->
+<section id="menu4" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Menu – Garden of Herbs</h2>
+    <div class="row g-4">
+      <!-- Item 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🥬Sabzi Challow</h5>
+            <p class="card-text">Spinach stew cooked with herbs, served with rice.</p>
+            <p class="mb-1"><strong>400 AFN</strong></p>
+            <span class="badge availability available">Available</span>
+          </div>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🎃Kadu Borani</h5>
+            <p class="card-text">Sweet pumpkin sautéed and topped with yogurt and mint.</p>
+            <p class="mb-1"><strong>150 AFN</strong></p>
+            <span class="badge availability unavailable">Unavailable</span>
+          </div>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🥗Vegetarian Combo</h5>
+            <p class="card-text">A colorful plate of seasonal vegetables and chutneys.</p>
+            <p class="mb-1"><strong>180 AFN</strong></p>
+            <span class="badge availability available">Available</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Restaurant Menu Section – Kabul Delights -->
+<section id="menu5" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Menu – Kabul Delights</h2>
+    <div class="row g-4">
+      <!-- Item 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🍆Banjaan Borani</h5>
+            <p class="card-text">Fried eggplant slices layered with tomato sauce and garlic yogurt, garnished with mint.</p>
+            <p class="mb-1"><strong>220 AFN</strong></p>
+            <span class="badge availability available">Available</span>
+          </div>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🍵Mashawa Soup</h5>
+            <p class="card-text">Hearty Afghan soup made with mung beans, chickpeas, yogurt, and spices.</p>
+            <p class="mb-1"><strong>180 AFN</strong></p>
+            <span class="badge availability unavailable">Unavailable</span>
+          </div>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🍛Kofta Curry</h5>
+            <p class="card-text">Spiced meatballs simmered in rich tomato gravy, served with rice or naan.</p>
+            <p class="mb-1"><strong>350 AFN</strong></p>
+            <span class="badge availability available">Available</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Restaurant Menu Section – Herat Noodles -->
+<section id="menu6" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Menu – Herat Noodles</h2>
+    <div class="row g-4">
+      <!-- Item 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🍝Afghan Spaghetti</h5>
+            <p class="card-text">Thin noodles tossed with a tomato and beef sauce, spiced with Afghan herbs.</p>
+            <p class="mb-1"><strong>300 AFN</strong></p>
+            <span class="badge availability available">Available</span>
+          </div>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🍜Qorma Noodles</h5>
+            <p class="card-text">Soft noodles topped with lamb qorma and vegetables, flavored with turmeric and garlic.</p>
+            <p class="mb-1"><strong>350 AFN</strong></p>
+            <span class="badge availability unavailable">Unavailable</span>
+          </div>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">🧀Spinach Noodle Bake</h5>
+            <p class="card-text">Baked Afghan-style pasta layered with spinach, white sauce, and cottage cheese.</p>
+            <p class="mb-1"><strong>150 AFN</strong></p>
+            <span class="badge availability available">Available</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Order Form Section -->
+<section id="order" class="py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="card shadow rounded-4 p-4 border-0">
+          <h2 class="text-center mb-4">🛒 Place Your Order</h2>
+          <form action="#" method="post">
+            <div class="row g-4">
+              
+              <!-- Customer Name -->
+              <div class="col-12 col-md-6">
+                <label for="name" class="form-label fw-semibold">👤 Full Name</label>
+                <input type="text" id="name" class="form-control rounded-3" placeholder="Enter your name" required>
+              </div>
+
+              <!-- Phone Number -->
+              <div class="col-12 col-md-6">
+                <label for="phone" class="form-label fw-semibold">📞 Phone Number</label>
+                <input type="tel" id="phone" class="form-control rounded-3" placeholder="e.g., +93 70XXXXXXX" required>
+              </div>
+
+              <!-- Restaurant Select -->
+              <div class="col-12 col-md-6">
+                <label for="restaurant" class="form-label fw-semibold">🏪 Choose Restaurant</label>
+                <select id="restaurant" class="form-select rounded-3" required>
+                  <option disabled selected>Select a restaurant</option>
+                  <option value="kabul-karahi">Kabul Karahi</option>
+                  <option value="spice-of-jaghori">Spice of Jaghori</option>
+                  <option value="ghazni-grill">Ghazni Grill</option>
+                  <option value="sabzi-house">Sabzi House</option>
+                  <option value="kabuli-kitchen">Kabuli Kitchen</option>
+                  <option value="clay-oven-corner">Clay Oven Corner</option>
+                </select>
+              </div>
+
+              <!-- Menu Items Selection -->
+              <div class="col-12 col-md-6">
+                <label class="form-label fw-semibold">🍽️ Select Dishes</label>
+
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="item1">
+                  <label class="form-check-label d-flex justify-content-between align-items-center" for="item1">
+                     Banjaan Borani
+                    <input type="number" min="1" max="10" class="form-control ms-2 w-25 d-inline-block" placeholder="1">
+                  </label>
+                </div>
+
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="item2">
+                  <label class="form-check-label d-flex justify-content-between align-items-center" for="item2">
+                     Kofta Curry
+                    <input type="number" min="1" max="10" class="form-control ms-2 w-25 d-inline-block" placeholder="1">
+                  </label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="item3">
+                  <label class="form-check-label d-flex justify-content-between align-items-center" for="item3">
+                      Afghan Spaghetti
+                    <input type="number" min="1" max="10" class="form-control ms-2 w-25 d-inline-block" placeholder="1">
+                  </label>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-success px-5 py-2 mt-3 rounded-pill shadow-sm">Place Order</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      
+      <!-- Left Column: Image -->
+      <div class="col-12 col-md-6">
+        <img src="image/about.png" alt="About Foodie Hub" class="img-fluid rounded-4 shadow-sm">
+      </div>
+      
+      <!-- Right Column: Text -->
+      <div class="col-12 col-md-6">
+        <h2 class="mb-3">About <span class="text-success">Foodie Hub</span></h2>
+        <p class="lead">Foodie Hub is your gateway to a world of delicious meals, curated from top restaurants in your area. 
+          We believe ordering food should be simple, fast, and joyful.</p>
+        <p>Whether you're craving traditional favorites or international flavors, our platform connects you to a wide 
+          variety of restaurants, all in one place. No logins, no delays — just good food, quickly ordered.</p>
+        <p>We value convenience, diversity, and great taste. Explore menus, choose your meals, 
+          and enjoy seamless food ordering without the hassle.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Chef’s Spotlight Section -->
+<section id="chef-spotlight" class="py-5 bg-success bg-opacity-10">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-success">👨‍🍳 Chef’s Spotlight</h2>
+      <p class="text-muted fs-5">Each week, we highlight a cherished Afghan dish with a personal story from our chefs.</p>
+    </div>
+
+    <div class="row align-items-center g-5">
+      <!-- Left Image -->
+      <div class="col-12 col-md-6">
+        <img src="image/one plate Ashak Afgh.png" alt="Ashak Dish" class="img-fluid rounded-4 shadow-sm border border-success border-3" />
+      </div>
+
+      <!-- Right Quote Box -->
+      <div class="col-12 col-md-6">
+        <div class="bg-white p-4 shadow-sm rounded-4 border-start border-5 border-success">
+          <h4 class="fw-bold mb-3">🥟 Ashak – Dumplings of Celebration</h4>
+          <p class="fst-italic mb-3">“Ashak reminds me of Nowruz and evenings with my mother and sisters – the aroma, the joy, the pride. This dish is our family’s story.”</p>
+          <footer class="blockquote-footer">Chef Fatima, <cite title="Source Title">Spice of Jaghori</cite></footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  Meet Our Chefs Section -->
+<section id="meet-chefs" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-success">👩‍🍳 Meet Our Chefs</h2>
+      <p class="text-muted fs-5">The passionate culinary artists behind every flavor and dish you enjoy.</p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Chef 1 -->
+    <div class="col-12 col-md-4">
+        <div class="card border-0 shadow-sm rounded-4 text-center p-4 h-100">
+          <img src="image/chef-farhad .png" alt="Chef Farhad" class="rounded-circle mx-auto mb-3 shadow" style="width: 150px; height: 150px; object-fit: cover;">
+          <h5 class="fw-bold text-success">Chef Farhad</h5>
+          <p class="text-muted">Kabul Karahi</p>
+          <p>Master of lamb dishes with 10+ years in Kabul’s royal kitchens. Known for his secret spice blend and karahi excellence.</p>
+        </div>
+      </div>
+
+      <!-- Chef 2 -->
+     <div class="col-12 col-md-4">
+        <div class="card border-0 shadow-sm rounded-4 text-center p-4 h-100">
+          <img src="image/yasmin.png" alt="Chef Yasmin" class="rounded-circle mx-auto mb-3 shadow" style="width: 150px; height: 150px; object-fit: cover;">
+          <h5 class="fw-bold text-success">Chef Yasmin</h5>
+          <p class="text-muted">Spice of Jaghori</p>
+          <p>A spice alchemist and beloved village cook, Yasmin crafts magical dishes inspired by the mountains of Jaghori.</p>
+        </div>
+      </div>
+     
+      <!-- Chef 3 -->
+      <div class="col-12 col-md-4">
+        <div class="card border-0 shadow-sm rounded-4 text-center p-4 h-100">
+          <img src="image/Chef Rahim.png" alt="Chef Rahim" class="rounded-circle mx-auto mb-3 shadow" style="width: 150px; height: 150px; object-fit: cover;">
+          <h5 class="fw-bold text-success">Chef Rahim</h5>
+          <p class="text-muted">Ghazni Grill</p>
+          <p>BBQ artist from Ghazni. Famous for perfectly charred kebabs and bold grilling techniques passed down generations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-8 text-center">
+        <h2 class="fw-bold text-success mb-3">Get in Touch</h2>
+        <p class="text-muted fs-5">We’d love to hear from you. Whether you have a question or just want to say hello, feel free to reach out.</p>
+      </div>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <!-- Contact Info Card -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 text-center py-4 rounded-4">
+          <div class="card-body">
+            <i class="bi bi-envelope-paper-fill text-success fs-1 mb-3"></i>
+            <h5 class="card-title fw-semibold">Email</h5>
+            <p class="text-muted">support@foodiehub.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 text-center py-4 rounded-4">
+          <div class="card-body">
+            <i class="bi bi-telephone-fill text-success fs-1 mb-3"></i>
+            <h5 class="card-title fw-semibold">Phone</h5>
+            <p class="text-muted">+93 70 123 4567</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 text-center py-4 rounded-4">
+          <div class="card-body">
+            <i class="bi bi-geo-alt-fill text-success fs-1 mb-3"></i>
+            <h5 class="card-title fw-semibold">Address</h5>
+            <p class="text-muted">Main Street, Ghazni, Afghanistan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="text-center mt-5">
+      <h5 class="text-muted mb-3">Follow us on</h5>
+      <div class="d-flex justify-content-center gap-4 fs-4">
+        <a href="https://www.facebook.com/profile.php?id=100085804754306" class="text-success social-icon"><i class="bi bi-facebook"></i></a>
+        <a href="https://github.com/MarziaHashimi" class="text-success social-icon"><i class="bi bi-github"></i></a>
+        <a href="https://x.com/marzia_hashimi2" class="text-success social-icon"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/marzia-hashimi-16581a251/" class="text-success social-icon"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 bg-dark text-white mt-5 border-top border-success border-opacity-25">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+        <p class="mb-0 small">&copy; 2025 <strong>Foodie Hub</strong> — Pure Taste, Proud Roots.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <p class="mb-0 small">Crafted with ✨ and chai-fueled code by Afghan hearts.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
