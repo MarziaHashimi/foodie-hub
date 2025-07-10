@@ -66,12 +66,10 @@ html {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Make sure card images are consistent */
 .card-img-top {
   height: 200px;
   object-fit: cover;
 }
-
 
 /* Availability Badge Colors */
 .badge.availability {
@@ -108,7 +106,6 @@ input:focus, select:focus {
   border-color: #28a745;
 }
 
-/* Make the card standout a little more */
 .card {
   background-color: white;
   border-radius: 1.5rem;
@@ -124,14 +121,14 @@ input:focus, select:focus {
 /* Fix card image overflow and rounding */
 .restaurant-card {
   overflow: hidden;
-  border-radius: 0.5rem; /* Optional: soft corners for entire card */
+  border-radius: 0.5rem; 
 }
 
 .restaurant-card .card-img-top {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   object-fit: cover;
-  height: 200px; /* Adjust this to fit your image proportions */
+  height: 200px; 
   width: 100%;
 }
 
@@ -146,6 +143,10 @@ input:focus, select:focus {
   transform: scale(1.02);
 }
 
+.custom-img {
+  max-height: 550px; 
+  object-fit: cover; 
+}
 
 /* Social Icons hover effect */
 .social-icon {
