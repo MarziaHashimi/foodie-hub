@@ -148,6 +148,11 @@ input:focus, select:focus {
   object-fit: cover; 
 }
 
+.custom-img-1 {
+  max-height: 490px; 
+  object-fit: cover; 
+}
+
 /* Social Icons hover effect */
 .social-icon {
   transition: all 0.3s ease;
