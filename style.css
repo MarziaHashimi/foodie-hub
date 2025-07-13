@@ -2,7 +2,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+body {
+  overflow-x: hidden;
+}
 /* Hero Section */
 .hero-section {
   height: 100vh;
@@ -45,6 +47,24 @@ html {
   animation: fadeUp 2s ease-out;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.form-check-label {
+  flex-wrap: wrap;
+}
+
+.form-check-label input[type="number"] {
+  width: auto;
+  max-width: 100%;
+  margin-top: 0.5rem;
+  height: 35px;
+  text-align: center;
+  font-size: 0.9rem;
+}
 /* CSS-only animation */
 @keyframes fadeDown {
   from { opacity: 0; transform: translateY(-30px); }
@@ -182,12 +202,24 @@ footer {
 }
 /* Mobile screens */
 @media (max-width: 576px) {
-  .hero-text {
-    padding: 1rem;
+  .form-check-label {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .form-check-label input[type="number"] {
-    width: 50px;
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
+
 
 
