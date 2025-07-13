@@ -2,9 +2,6 @@
 html {
   scroll-behavior: smooth;
 }
-body {
-  overflow-x: hidden;
-}
 /* Hero Section */
 .hero-section {
   height: 100vh;
@@ -18,7 +15,20 @@ body {
   justify-content: center;
   text-align: center;
 }
+.navbar {
+  position: sticky !important;
+  top: 0;
+  z-index: 1080;
+}
 
+section, header, footer, nav, .container, .row {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.navbar-nav {
+  flex-wrap: wrap;
+}
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -214,7 +224,9 @@ footer {
   .hero-text p {
     font-size: 0.95rem;
   }
-
+  .card-img-top {
+    height: 160px;
+  }
   footer {
     padding-left: 1rem;
     padding-right: 1rem;
